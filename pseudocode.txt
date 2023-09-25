@@ -1,0 +1,17 @@
+Test Case 1:
+[["12:30", "14:00"], ["16:00", "17:00"], ["17:30", "18:00"]]
+["9:00", "19:00"]
+[["11:30", "13:00"], ["15:00", "17:30"]]
+["8:00", "20:00"]
+meeting_duration = 30
+
+
+def scheduler()
+  read input.txt
+  store line 1 into person1_schedule
+  store line 2 into person1_dailyActive
+  store line 3 into person2_schedule
+  store line 4 into person2_dailyActive
+  store line 5 into meeting_duration
+
+  // combine overall 
