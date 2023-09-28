@@ -22,3 +22,10 @@ def combineDailyActive(person1_dailyActive, person2_dailyActive, dailyActive):
     dailyActive.append(person2_dailyActive[1])
   elif (p1Upper == p2Upper):
     dailyActive.append(person1_dailyActive[1])
+
+def scheduleMeeting(person1_schedule, person2_schedule, dailyActive,
+                    meeting_duration, available_times):
+  earliest = convertTimeToMinutes(dailyActive[0])
+  latest = convertTimeToMinutes(dailyActive[1])
+  # Combines both schedules into one big schedule. Still trying to figure out how to sort this.
+  schedule_string = person1_schedule + person2_schedule
