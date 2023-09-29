@@ -94,3 +94,10 @@ with open(
       # Append the available_times to the output.txt file
       with open("output.txt", 'a') as outputFile:
         outputFile.write("Test Case: {}\n".format(testCaseCount) + str(available_times) + "\n")
+
+      # Empty out the variables we created in order to overwrite them with new schedules and data.
+      var1 = []
+      var2 = []
+      var3 = []
+      var4 = []
+      var5 = 0
