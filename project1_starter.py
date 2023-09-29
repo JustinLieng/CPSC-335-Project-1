@@ -90,3 +90,7 @@ with open(
       combineDailyActive(person1_dailyActive, person2_dailyActive, dailyActive)
       scheduleMeeting(person1_schedule, person2_schedule, dailyActive,
                       meeting_duration, available_times)
+      
+      # Append the available_times to the output.txt file
+      with open("output.txt", 'a') as outputFile:
+        outputFile.write("Test Case: {}\n".format(testCaseCount) + str(available_times) + "\n")
