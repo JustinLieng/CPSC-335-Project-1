@@ -101,3 +101,14 @@ with open(
       var3 = []
       var4 = []
       var5 = 0
+      dailyActive = []
+      available_times = []
+      person1_schedule = ast.literal_eval(str(var1))
+      person1_dailyActive = ast.literal_eval(str(var2))
+      person2_schedule = ast.literal_eval(str(var3))
+      person2_dailyActive = ast.literal_eval(str(var4))
+      meeting_duration = ast.literal_eval(str(var5))
+      testCaseCount += 1
+      x = 1
+      continue
+    x += 1
