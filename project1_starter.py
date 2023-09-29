@@ -73,6 +73,11 @@ with open(
     "input.txt") as file:  # Initialize each line in input.txt to var1-var5
   x = 1
   testCaseCount = 1
+  
+  # Clear the output.txt file
+  with open("output.txt", 'w') as outputFile:
+    outputFile.write("== Available Times ==\n")
+    
   for line in file:
     if line == "\n":
       x = 1
