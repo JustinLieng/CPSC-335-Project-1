@@ -78,3 +78,15 @@ with open(
       x = 1
       continue
     exec(f'var{x} = line')
+    
+    if x % 5 == 0:
+      # Copy var1-var5 to descriptive variable names.
+      # The ast functions are to convert from string to a list.
+      person1_schedule = ast.literal_eval(str(var1))
+      person1_dailyActive = ast.literal_eval(str(var2))
+      person2_schedule = ast.literal_eval(str(var3))
+      person2_dailyActive = ast.literal_eval(str(var4))
+      meeting_duration = ast.literal_eval(str(var5))
+      combineDailyActive(person1_dailyActive, person2_dailyActive, dailyActive)
+      scheduleMeeting(person1_schedule, person2_schedule, dailyActive,
+                      meeting_duration, available_times)
